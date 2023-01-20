@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooter Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Game Frame -->
+    <div id="gameFrame" onclick="myGunSound.play()">
+        <p>Health bar:</p>
+        <div id="healthBar"></div>
+
+        <div onclick="iShoot(this)" class="enemy" id="enemy1"></div>
+        <div onclick="iShoot(this)" class="enemy" id="enemy2"></div>
+        <div onclick="iShoot(this)" class="enemy" id="enemy3"></div>
+        <div onclick="iShoot(this)" class="enemy" id="enemy4"></div>
+        <div onclick="iShoot(this)" class="enemy" id="enemy5"></div>
+       
+        <button onclick="newGame()"> New Game </button>
+
+    </div>
+
+   
+    <!-- Script -->
+    <script src="./index.js"></script>
+</body>
+</html>
